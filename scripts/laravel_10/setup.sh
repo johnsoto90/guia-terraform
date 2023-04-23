@@ -1,9 +1,9 @@
 #!/bin/bash
-REPO=""
-PROJECT_NAME="example"
-DB_DATABASE="example_project"
-DB_USERNAME="root"
-DB_PASSWORD=""
+
+# Carga .env y crea las variables de entorno
+set -a
+source .env
+set +a
 
 # Actualiza el sistema y instala los paquetes necesarios
 sudo apt update && sudo apt upgrade -y
